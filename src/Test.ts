@@ -9,8 +9,11 @@ async function API() {
     const data=(document.getElementById('data') as HTMLElement);
 
     const neo=result.near_earth_objects["2015-09-08"];
-    data.innerHTML=neo[0].is_potentially_hazardous_asteroid;
-
+    if(neo[0].is_potentially_hazardous_asteroid===true){
+      data.innerHTML = "yes";
+    } else{
+      data.innerHTML = "no";
+    }
     const Asteroid=document.getElementById('Ast-name') as HTMLElement;
     Asteroid.innerHTML=neo[0].name;
 
