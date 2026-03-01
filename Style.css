@@ -1,0 +1,27 @@
+body {
+    min-height: 100vh;
+    background-color: #7979e7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Courier New", Helvetica, sans-serif;
+}
+
+#information {
+    background-color: white;
+    border:black 2px solid;
+    margin: 35vh auto;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+
+    height: 100%;
+    background-color: grey;
+    color: white;
+}
+
